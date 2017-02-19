@@ -16,8 +16,10 @@
 
 		{{#each samples}}
 		   	<div class="itemP item-album {{#if isAlbumsPage }} itemP-border item-sample {{/if}} hidePL" title="{{this.metadata.title}}">
-		   		<a href="#" class="album-link"><img alt="{{this.metadata.caption}}" src="{{this.url store='image_md'}}">
-		   			<div class="caption">
+		   		<a href="#" class="album-link">
+
+					<img alt="{{this.metadata.caption}}" src="{{this.url store='image_md'}}">
+		   			<div id="bobandy" class="caption">
 			   			<div class="caption-wrapper">
 			   				<div class="caption-container">
 			   					<p>Album</p>

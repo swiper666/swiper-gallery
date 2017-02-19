@@ -6,10 +6,24 @@ Template.albumGroup.onRendered(function() {
 	if (!isTouchDevice()) {
 		$('.itemP').hover(
 	        function(){
-	            $(this).find('.caption').fadeIn(300); 
+	            $(this).find('.caption').fadeIn(300);
+
+                /*document.body.style.backgroundImage = "url('/img/age1.jpg')";*/
+
+                /*var string = "url('this.url store='image_md'')";
+                alert(string)
+                document.getElementById("bobandy").style.backgroundImage = string;
+                document.getElementsByClassName("caption").src = string;*/
+                document.getElementById("bobandy").style.backgroundImage = "url('/img/sdf-grayscale.jpg')";
+
+
+
 	        },
+
 	        function(){
-	            $(this).find('.caption').fadeOut(300); 
+	            $(this).find('.caption').fadeOut(300);
+
+
 	        }
 	    );
 	}
