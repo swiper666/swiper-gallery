@@ -1,4 +1,5 @@
 # A Meteor Image Management & Gallery Application
+EMILS EDB / WALDEMAR IT
 
 A responsive, easy-to-use image management and gallery built with MeteorJS. See example [here](http://elmarcreative.com). 
 
