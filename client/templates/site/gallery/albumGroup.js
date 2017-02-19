@@ -29,12 +29,6 @@ Template.albumGroup.helpers({
 	    if (!! this.content)
 	      return this.content.length;
 	},
-	showTitle: function () {
-		return typeof Template.parentData(1).showTitles === undefined ? true : Template.parentData(1).showTitles;
-	},
-	isAlbumsPage: function () {
-		return typeof Template.parentData(2).showTitles === undefined ? true : Template.parentData(2).showTitles;
-	}
 });
 
 Template.albumGroup.events({
