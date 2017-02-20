@@ -14,7 +14,6 @@ Template.albumGroup.onRendered(function() {
                 alert(string)
                 document.getElementById("bobandy").style.backgroundImage = string;
                 document.getElementsByClassName("caption").src = string;*/
-                document.getElementById("bobandy").style.backgroundImage = "url('/img/sdf-grayscale.jpg')";
 
 
 
