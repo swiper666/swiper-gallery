@@ -11,7 +11,8 @@ var $container,
 			    	filter:       '*', 
 		  	    	masonry: {
 						gutter: '.gutter-sizer',
-		  	   			columnWidth: '.grid-sizer'
+		  	   			columnWidth: '.grid-sizer',
+
 					}
 				 };
 

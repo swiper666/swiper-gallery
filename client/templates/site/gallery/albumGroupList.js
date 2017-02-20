@@ -8,7 +8,7 @@ var $isocontainer,
 					itemSelector: '.itemP',
 		  	    	masonry: {
 						gutter: '.gutter-sizer',
-		  	   			columnWidth: '.grid-sizer'
+		  	   			columnWidth: '.grid-sizer',
 					}
 				 };
 
