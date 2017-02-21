@@ -10,16 +10,93 @@
           </button>
           <a class="navbar-brand" href="#">{{> siteName }}</a>
         </div>
-        <div id="navbar-main" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-           <li class="{{ isActive 'albums' 'home' 'album'}}"><a href="{{ pathFor route='albums'}}">Albums</a></li>
-            <li class="{{ isActive 'contact'}}"><a href="{{ pathFor route='contact'}}">Building Elements</a></li>
-            <li class="{{ isActive 'about'}}"><a href="{{ pathFor route='about'}}">Doors</a></li>
-            <li class="{{ isActive 'contact'}}"><a href="{{ pathFor route='contact'}}">Furniture</a></li>
-            <li class="{{ isActive 'about'}}"><a href="{{ pathFor route='about'}}">Glazing</a></li>
-            <li class="{{ isActive 'contact'}}"><a href="{{ pathFor route='contact'}}">Landscape</a></li>
-            <li class="{{ isActive 'about'}}"><a href="{{ pathFor route='about'}}">Lighting</a></li>
+        <div id="navbar-main navbarFilters" class="navbar-collapse collapse">
 
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown {{ isActive }}">
+                  <a class="dropdown-toggle" data-toggle="dropdown"  href="*">Appliances
+                          <span class="caret"></span></a>
+                      <ul class="nav navbar-nav dropdown-menu">
+                          <li><a href="#" class="btn btn-link filter-btn" data-filter=".assessorcies">Accessories</a></li>
+                          <li><a href="#" class="btn btn-link filter-btn" data-filter=".decoration">Decoration</a></li>
+                          <li><a href="#" class="btn btn-link filter-btn" data-filter=".electrical">Electrical</a></li>
+                          <li><a href="#" class="btn btn-link filter-btn" data-filter=".fixtures">Fixtures</a></li>
+                          <li><a href="#" class="btn btn-link filter-btn" data-filter=".sanitation">Sanitation</a></li>
+                      </ul>
+              </li>
+
+         
+
+                 <li class="dropdown {{ isActive 'contact'}}">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="*">Building Elements
+                    <span class="caret"></span></a>
+                     <ul class="nav navbar-nav dropdown-menu">
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".ceiling">Ceiling</a></li>
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".decoration">Construction</a></li>
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".floor">Floor</a></li>
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".roof">Roof</a></li>
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".stairs">Stairs</a></li>
+                         <li><a href="#" class="btn btn-link filter-btn" data-filter=".wall">Wall</a></li>
+                </ul>
+                 </li>
+
+               <li class="{{ isActive 'about'}}">
+                   <a class="dropdown-toggle" data-toggle="dropdown" href="{{ pathFor route='about'}}">Doors
+                       <span class="caret"></span></a>
+                   <ul class="nav navbar-nav dropdown-menu">
+                       <li><a href="#" class="btn btn-link filter-btn" data-filter=".exterior">Exterior</a></li>
+                       <li><a href="#" class="btn btn-link filter-btn" data-filter=".interior">Interior</a></li>
+                       <li><a href="#" class="btn btn-link filter-btn" data-filter=".other">Other</a></li>
+                   </ul>
+               </li>
+
+                <li class="dropdown {{ isActive 'contact'}}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ pathFor route='contact'}}">Furniture
+                        <span class="caret"></span></a>
+                    <ul class="nav navbar-nav dropdown-menu">
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".bed">Bed</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".chair">Chair</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".desk">Desk</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".sofa">Sofa</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".storage">Storage</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".table">Table</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown {{ isActive 'about'}}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ pathFor route='about'}}">Glazing
+                        <span class="caret"></span></a>
+                    <ul class="nav navbar-nav dropdown-menu">
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".glass-partitions">Glass Partitions</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".skylight">Skylight</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".structural-glazing">Structural Glazing</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".windows">Windows</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown {{ isActive 'contact'}}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ pathFor route='contact'}}">Landscape
+                        <span class="caret"></span></a>
+                    <ul class="nav navbar-nav dropdown-menu">
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".furniture">Furniture</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".planting">Planting</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".playground">Playground</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".roadwork">Roadwork</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="dropdown {{ isActive 'about'}}">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="{{ pathFor route='about'}}">Lighting
+                        <span class="caret"></span></a>
+                    <ul class="nav navbar-nav dropdown-menu">
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".ceiling-light">Ceiling Light</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".floor-light">Floor Light</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".site-fixture">Site Fixture</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".table-light">Table Light</a></li>
+                        <li><a href="#" class="btn btn-link filter-btn" data-filter=".wall-fixture">Wall Fixture</a></li>
+                    </ul>
+                </li>
           </ul>
         </div>
       </div>

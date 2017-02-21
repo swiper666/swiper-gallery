@@ -2,6 +2,8 @@
 // An album group is a sampling of an album
 // sampleCount = # random sample images from album
 // showTitle = true/false - show the album title box amidst samples
+
+
 var $isocontainer,
 	loadCount = 0,
 	isoOptions = { 
